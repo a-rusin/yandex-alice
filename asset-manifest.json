@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/yandex-alice/static/css/main.6ef9cf35.css",
+    "main.js": "/yandex-alice/static/js/main.d456afcd.js",
+    "static/media/alice-hero.mp4": "/yandex-alice/static/media/alice-hero.9bb58d25143aaa091077.mp4",
+    "static/media/sale.mp4": "/yandex-alice/static/media/sale.d87b7f552a3193fb563f.mp4",
+    "static/media/audio.mp4": "/yandex-alice/static/media/audio.d6e89b7c66d387d528b1.mp4",
+    "static/media/slider-img3.png": "/yandex-alice/static/media/slider-img3.c9b9995fd44e9de71e5e.png",
+    "static/media/cleaner.gif": "/yandex-alice/static/media/cleaner.47dbe24665ac83547ad3.gif",
+    "static/media/slider-img4.png": "/yandex-alice/static/media/slider-img4.6354677440c1a9a204e9.png",
+    "static/media/slider-img2.png": "/yandex-alice/static/media/slider-img2.fbde1c3bbbcf7d0a8d73.png",
+    "static/media/alice-bg.png": "/yandex-alice/static/media/alice-bg.6430b89652e64a35394c.png",
+    "static/media/audio-bg.mp4": "/yandex-alice/static/media/audio-bg.5b3d43869cba5cf0b95d.mp4",
+    "static/media/smart-home-1.jpg": "/yandex-alice/static/media/smart-home-1.891a6701424983fa96a2.jpg",
+    "static/media/light-bg.mp4": "/yandex-alice/static/media/light-bg.4a565ce352b4c315f392.mp4",
+    "static/media/slider-img1.png": "/yandex-alice/static/media/slider-img1.5cf29a88c0550b9162b7.png",
+    "static/media/socket.gif": "/yandex-alice/static/media/socket.d39ae2fca228ca360b81.gif",
+    "static/media/smart-home-3.jpg": "/yandex-alice/static/media/smart-home-3.1a62c7bf4141e523a2be.jpg",
+    "static/media/smart-home-4.jpg": "/yandex-alice/static/media/smart-home-4.f8c533d8b621ce2fd964.jpg",
+    "static/media/features_03.jpg": "/yandex-alice/static/media/features_03.581b3dfb120cf62beaf4.jpg",
+    "static/media/smart-home-2.jpg": "/yandex-alice/static/media/smart-home-2.3eaa124c160fa080c277.jpg",
+    "static/media/features_02.jpg": "/yandex-alice/static/media/features_02.64dfa9cc18fb37985a1e.jpg",
+    "static/media/features_01.jpg": "/yandex-alice/static/media/features_01.88baaa7472a66c75bdcc.jpg",
+    "static/media/YandexSansText-Light.woff": "/yandex-alice/static/media/YandexSansText-Light.f70b7e207ff9d5bd19e0.woff",
+    "static/media/YandexSansText-Medium.woff": "/yandex-alice/static/media/YandexSansText-Medium.6b83f25f39c3f10cc22e.woff",
+    "static/media/YandexSansText-Bold.woff": "/yandex-alice/static/media/YandexSansText-Bold.93ad5a0a463082e24771.woff",
+    "static/media/YandexSansText-Regular.woff": "/yandex-alice/static/media/YandexSansText-Regular.1c422f2ef1e510532200.woff",
+    "static/media/YandexSansText-Medium.woff2": "/yandex-alice/static/media/YandexSansText-Medium.43fa0def7951e857f96c.woff2",
+    "static/media/YandexSansText-Bold.woff2": "/yandex-alice/static/media/YandexSansText-Bold.b7699b9b700ad29caa9b.woff2",
+    "static/media/YandexSansText-Regular.woff2": "/yandex-alice/static/media/YandexSansText-Regular.fd627cc781ea46efb18f.woff2",
+    "static/media/logo.svg": "/yandex-alice/static/media/logo.36e196a8e8754f1b08cd4237cebd5a2d.svg",
+    "static/media/logo-3.svg": "/yandex-alice/static/media/logo-3.8f17244d3993e4667c86.svg",
+    "index.html": "/yandex-alice/index.html",
+    "static/media/whisper-icon.svg": "/yandex-alice/static/media/whisper-icon.b79b71616d55e9136945.svg",
+    "static/media/logo-2.svg": "/yandex-alice/static/media/logo-2.6ce6e3a64152d60cfc37bea87568f31f.svg",
+    "main.6ef9cf35.css.map": "/yandex-alice/static/css/main.6ef9cf35.css.map",
+    "main.d456afcd.js.map": "/yandex-alice/static/js/main.d456afcd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ef9cf35.css",
+    "static/js/main.d456afcd.js"
+  ]
+}
