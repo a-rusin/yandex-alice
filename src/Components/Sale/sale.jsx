@@ -34,15 +34,9 @@ function Sale() {
           </div>
         </div>
         <div className="sale__img-block">
-          <motion.video
-            variants={fadeLeft}
-            custom={1}
-            autoPlay
-            loop
-            muted
-            src={video}
-            className="sale__bg-img"
-          ></motion.video>
+          <motion.video variants={fadeLeft} custom={1} autoPlay loop muted playsInline className="sale__bg-img">
+            <source src={video} type="video/mp4" />
+          </motion.video>
         </div>
       </div>
     </motion.section>

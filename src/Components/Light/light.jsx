@@ -13,15 +13,9 @@ function Light() {
       <div className="light__content">
         <div className="light__img-content">
           <div className="light__img-block">
-            <motion.video
-              custom={1}
-              variants={fadeUp}
-              autoPlay
-              loop
-              muted
-              src={video}
-              className="light__img"
-            ></motion.video>
+            <motion.video custom={1} variants={fadeUp} autoPlay loop muted playsInline className="light__img">
+              <source src={video} type="video/mp4" />
+            </motion.video>
           </div>
         </div>
         <div className="light__text-content">

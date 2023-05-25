@@ -11,24 +11,12 @@ function Audio() {
     <motion.section viewport={{ amount: 0.4, once: true }} initial="hidden" whileInView="visible" className="audio">
       <div className="audio__content">
         <div className="audio__bg-block">
-          <motion.video
-            custom={3}
-            variants={fadeRight}
-            autoPlay
-            loop
-            muted
-            src={bgVideo}
-            className="audio__bg-img"
-          ></motion.video>
-          <motion.video
-            custom={3}
-            variants={fadeLeft}
-            autoPlay
-            loop
-            muted
-            src={video}
-            className="audio__alice-img"
-          ></motion.video>
+          <motion.video custom={3} variants={fadeRight} autoPlay loop muted playsInline className="audio__bg-img">
+            <source src={bgVideo} type="video/mp4" />
+          </motion.video>
+          <motion.video custom={3} variants={fadeLeft} autoPlay loop muted playsInline className="audio__alice-img">
+            <source src={video} type="video/mp4" />
+          </motion.video>
         </div>
 
         <div className="audio__text-block">

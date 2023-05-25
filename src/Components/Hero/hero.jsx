@@ -18,15 +18,9 @@ function Hero() {
           с Алисой
         </motion.h2>
         <div className="hero__img-content">
-          <motion.video
-            custom={3}
-            variants={fadeUp}
-            autoPlay
-            loop
-            muted
-            src={video}
-            className="hero__img"
-          ></motion.video>
+          <motion.video custom={3} variants={fadeUp} autoPlay loop muted playsInline className="hero__img">
+            <source src={video} type="video/mp4" />
+          </motion.video>
         </div>
         <div className="hero__btn">
           <motion.a custom={4} variants={fadeUp} href="yandex.ru" className="hero__link">
