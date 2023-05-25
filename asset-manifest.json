@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/yandex-alice/static/css/main.6ef9cf35.css",
-    "main.js": "/yandex-alice/static/js/main.92026408.js",
+    "main.css": "/yandex-alice/static/css/main.925e08ec.css",
+    "main.js": "/yandex-alice/static/js/main.8304161e.js",
     "static/media/alice-hero.mp4": "/yandex-alice/static/media/alice-hero.9bb58d25143aaa091077.mp4",
     "static/media/sale.mp4": "/yandex-alice/static/media/sale.d87b7f552a3193fb563f.mp4",
     "static/media/audio.mp4": "/yandex-alice/static/media/audio.d6e89b7c66d387d528b1.mp4",
@@ -33,11 +33,11 @@
     "index.html": "/yandex-alice/index.html",
     "static/media/whisper-icon.svg": "/yandex-alice/static/media/whisper-icon.b79b71616d55e9136945.svg",
     "static/media/logo-2.svg": "/yandex-alice/static/media/logo-2.6ce6e3a64152d60cfc37bea87568f31f.svg",
-    "main.6ef9cf35.css.map": "/yandex-alice/static/css/main.6ef9cf35.css.map",
-    "main.92026408.js.map": "/yandex-alice/static/js/main.92026408.js.map"
+    "main.925e08ec.css.map": "/yandex-alice/static/css/main.925e08ec.css.map",
+    "main.8304161e.js.map": "/yandex-alice/static/js/main.8304161e.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ef9cf35.css",
-    "static/js/main.92026408.js"
+    "static/css/main.925e08ec.css",
+    "static/js/main.8304161e.js"
   ]
 }
