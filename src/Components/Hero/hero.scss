@@ -1,0 +1,95 @@
+@import "./../../assets/scss/functions.scss";
+@import "./../../assets/scss/variables.scss";
+@import "./../../assets/scss/mixins.scss";
+
+.hero {
+  height: 100vh;
+  overflow: hidden;
+  // .hero__content
+
+  &__content {
+    margin-top: pxToRem(140px);
+    text-align: center;
+    padding: 0px 20px;
+  }
+
+  // .hero__title
+
+  &__title {
+  }
+
+  // .hero__subtitle
+
+  &__subtitle {
+    font-size: pxToRem(24px);
+    max-width: pxToRem(627px);
+    margin: 0 auto;
+    margin-bottom: pxToRem(75px);
+  }
+
+  // .hero__img-content
+
+  &__img-content {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    /* height: fit-content; */
+  }
+
+  // .hero__img
+
+  &__img {
+    width: 65%;
+  }
+
+  // .hero__btn
+
+  &__btn {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+  }
+
+  // .hero__link
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: pxToRem(16px) pxToRem(32px);
+    background-color: $color-bg-page-light;
+    border-radius: pxToRem(40px);
+    @include transition-mixin;
+
+    &:hover {
+      background-color: $btn-bg-color;
+
+      & .hero__btn-text {
+        color: $color-font-white;
+      }
+
+      & .hero__play-icon path {
+        fill: $color-font-white;
+      }
+    }
+  }
+
+  // .hero__play-icon
+
+  &__play-icon {
+    & path {
+      @include transition-mixin;
+    }
+  }
+
+  // .hero__btn-text
+
+  &__btn-text {
+    font-weight: 500;
+    font-size: pxToRem(20px);
+    color: $color-font-main;
+    margin-left: pxToRem(6px);
+    @include transition-mixin;
+  }
+}

@@ -1,0 +1,32 @@
+@import "./../../assets/scss/functions.scss";
+@import "./../../assets/scss/mixins.scss";
+
+.btn {
+  font-size: pxToRem(18px);
+  color: $color-font-white;
+  padding: pxToRem(10px) pxToRem(38px);
+  background-color: $btn-bg-color;
+  border-radius: pxToRem(46px);
+  display: inline-block;
+  @include transition-mixin;
+
+  &:hover {
+    background-color: $btn-bg-color-hover;
+  }
+}
+
+.border-btn {
+  display: inline-block;
+  font-size: pxToRem(18px);
+  padding: pxToRem(10px) pxToRem(20px);
+  color: $color-font-main;
+  border: 1px solid $color-font-main;
+  border-radius: pxToRem(46px);
+  @include transition-mixin;
+
+  &:hover {
+    background-color: $btn-bg-color;
+    color: $color-font-white;
+    border: 1px solid $btn-bg-color;
+  }
+}

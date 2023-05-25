@@ -1,0 +1,32 @@
+@import "./../../assets/scss/functions.scss";
+@import "./../../assets/scss/variables.scss";
+
+.footer {
+  // .footer__content
+
+  &__content {
+    text-align: center;
+    padding: pxToRem(130px) pxToRem(10px);
+
+    @media (max-width: $break-point-tablet) {
+      padding: pxToRem(100px) pxToRem(10px);
+    }
+
+    @media (max-width: $break-point-mobile) {
+      padding: pxToRem(50px) pxToRem(10px);
+    }
+  }
+
+  // .footer__group
+
+  &__group {
+    margin-bottom: pxToRem(25px);
+  }
+
+  // .footer__text
+
+  &__text {
+    color: $color-font-main;
+    opacity: 0.4;
+  }
+}

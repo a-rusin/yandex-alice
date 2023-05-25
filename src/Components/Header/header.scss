@@ -1,0 +1,152 @@
+@import "./../../assets/scss/functions.scss";
+@import "./../../assets/scss/variables.scss";
+@import "./../../assets/scss/mixins.scss";
+
+.header {
+  padding: pxToRem(15px) 0px;
+  position: fixed;
+  z-index: 2001;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  overflow: hidden;
+  background-color: $color-bg-page-light;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2);
+  // .header__content
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+
+  // .header__left
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  // .header__burger
+
+  .header__burger {
+    display: none;
+    @include transition-mixin;
+
+    @media (max-width: $break-point-tablet) {
+      width: 25px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      background-color: $burger-bg-color;
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      @include transition-mixin;
+    }
+
+    &:before {
+      top: 0;
+    }
+
+    &:after {
+      bottom: 0;
+    }
+
+    & span {
+      position: absolute;
+      background-color: $burger-bg-color;
+      width: 100%;
+      height: 3px;
+      left: 0;
+      top: 9px;
+      @include transition-mixin;
+    }
+
+    &.active {
+      &::before {
+        transform: rotate(45deg);
+        top: 9px;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        bottom: 8px;
+      }
+
+      & span {
+        transform: scale(0);
+      }
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    &_big {
+      display: block;
+
+      @media (max-width: $break-point-tablet) {
+        display: none;
+      }
+    }
+
+    &_small {
+      display: none;
+
+      @media (max-width: $break-point-tablet) {
+        width: 30px;
+        height: 30px;
+        display: block;
+      }
+    }
+  }
+
+  // .header__center
+
+  &__center {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+
+    @media (max-width: $break-point-tablet) {
+      width: 50%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: -55%;
+      flex-direction: column;
+      justify-content: flex-start;
+      background-color: $color-bg-page-light;
+      box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.2);
+      z-index: -1;
+      padding: pxToRem(50px) pxToRem(10px);
+      @include transition-mixin;
+
+      &.active {
+        left: 0%;
+      }
+    }
+  }
+
+  // .header__right
+
+  &__right {
+  }
+
+  // .header__btn
+
+  &__btn {
+  }
+}

@@ -1,0 +1,63 @@
+@import "./assets/scss/reset.scss";
+@import "./assets/scss/fonts.scss";
+@import "./assets/scss/variables.scss";
+@import "./assets/scss/functions.scss";
+
+html {
+  font-size: $html-font-size-big;
+  font-family: "Yandex Sans Text", "Arial", sans-serif;
+  font-weight: 400;
+  background-color: $color-bg-page-dark;
+  color: $color-font-main;
+
+  @media (max-width: $break-point-tablet) {
+    font-size: $html-font-size-medium;
+  }
+
+  @media (max-width: $break-point-mobile) {
+    font-size: $html-font-size-small;
+  }
+}
+
+main {
+  overflow: hidden;
+}
+
+.container {
+  max-width: $container-main-width;
+  margin: 0 auto;
+  padding: 0px $safety-padding;
+}
+
+.container-title {
+  max-width: $container-secondary-width;
+  margin: 0 auto;
+  padding: 0px $safety-padding;
+}
+
+.title {
+  font-size: pxToRem(90px);
+  font-weight: 300;
+
+  @media (max-width: $break-point-tablet) {
+    font-size: pxToRem(70px);
+  }
+
+  @media (max-width: $break-point-mobile) {
+    font-size: pxToRem(60px);
+  }
+}
+
+.description {
+  max-width: pxToRem(278px);
+  font-size: pxToRem(18px);
+  line-height: pxToRem(20px);
+
+  @media (max-width: $break-point-tablet) {
+    font-size: pxToRem(16px);
+  }
+
+  @media (max-width: $break-point-mobile) {
+    font-size: pxToRem(14px);
+  }
+}

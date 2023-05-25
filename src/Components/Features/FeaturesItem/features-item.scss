@@ -1,0 +1,54 @@
+@import "./../../../assets/scss/functions.scss";
+@import "./../../../assets/scss/variables.scss";
+
+.features {
+  // .features__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: pxToRem(700px);
+    flex: 1 1 pxToRem(375px);
+    padding: pxToRem(60px);
+    color: $color-font-white;
+    border-radius: pxToRem(40px);
+
+    &_multiroom {
+      background: url("./../../../assets/img/features_01.jpg") 60% 0 / auto 100% no-repeat;
+    }
+
+    &_stereo {
+      background: url("./../../../assets/img/features_02.jpg") 60% 0 / auto 100% no-repeat;
+    }
+
+    &_equalizer {
+      background: url("./../../../assets/img/features_03.jpg") 50% 0 / auto 100% no-repeat;
+    }
+  }
+
+  // .features__name
+
+  &__name {
+    font-weight: 300;
+    font-size: pxToRem(32px);
+  }
+
+  // .features__text-block
+
+  &__text-block {
+  }
+
+  // .features__title
+
+  &__title {
+    font-weight: 700;
+    font-size: pxToRem(18px);
+    margin-bottom: pxToRem(16px);
+  }
+
+  // .features__description
+
+  &__description {
+  }
+}

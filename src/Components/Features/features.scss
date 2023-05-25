@@ -1,0 +1,20 @@
+@import "./../../assets/scss/functions.scss";
+@import "./../../assets/scss/variables.scss";
+
+.features {
+  // .features__content
+
+  &__content {
+    padding: pxToRem(170px) 0px pxToRem(100px);
+  }
+
+  // .features__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}

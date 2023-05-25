@@ -1,0 +1,231 @@
+@import "./../../assets/scss/functions.scss";
+@import "./../../assets/scss/variables.scss";
+
+.smart-home {
+  // .smart-home__content
+
+  &__content {
+    margin-top: pxToRem(110px);
+  }
+
+  // .smart-home__header
+
+  &__header {
+    margin-bottom: pxToRem(80px);
+  }
+
+  // .smart-home__title
+
+  &__title {
+    margin-bottom: pxToRem(32px);
+  }
+
+  // .smart-home__group
+
+  &__group {
+    border-radius: pxToRem(40px);
+    overflow: hidden;
+  }
+
+  // .smart-home__row
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 100;
+    overflow: hidden;
+    color: $color-font-white;
+  }
+
+  // .smart-home__block
+
+  &__block {
+    padding: pxToRem(60px) pxToRem(110px) pxToRem(125px) pxToRem(110px);
+
+    @media (max-width: $break-point-tablet) {
+      padding: pxToRem(40px);
+    }
+  }
+
+  // .smart-home__label
+
+  &__label {
+    width: pxToRem(250px);
+    font-weight: 300;
+    font-size: pxToRem(32px);
+    margin-bottom: pxToRem(32px);
+  }
+
+  // .smart-home__text-description
+
+  &__text-description {
+    width: pxToRem(280px);
+    margin-bottom: pxToRem(80px);
+    line-height: pxToRem(20px);
+  }
+
+  // .smart-home__btn
+
+  &__btn {
+    margin-bottom: pxToRem(24px);
+  }
+
+  // .smart-home__link
+
+  &__link {
+    width: pxToRem(200px);
+    display: block;
+    text-decoration: underline;
+    color: $color-font-white;
+  }
+
+  // .smart-home__bg-img
+
+  &__bg-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .smart-home__column
+
+  &__column {
+    position: relative;
+    overflow: hidden;
+
+    &:nth-child(1) {
+      flex: 1 1 100%;
+    }
+
+    &:nth-child(2) {
+      flex: 1 1 33.333%;
+    }
+
+    &:nth-child(3) {
+      flex: 1 1 33.333%;
+    }
+
+    &:nth-child(4) {
+      flex: 1 1 33.333%;
+
+      @media (max-width: $break-point-tablet) {
+        flex: 1 1 100%;
+      }
+    }
+
+    // .smart-home__column_first
+
+    &_first {
+      padding: pxToRem(40px) pxToRem(40px) pxToRem(40px) pxToRem(110px);
+
+      @media (max-width: $break-point-tablet) {
+        padding: pxToRem(40px);
+      }
+    }
+
+    // .smart-home__column_second
+
+    &_second {
+      padding: pxToRem(40px) pxToRem(40px) pxToRem(40px) pxToRem(64px);
+
+      @media (max-width: $break-point-tablet) {
+        padding: pxToRem(40px);
+      }
+    }
+  }
+
+  // .smart-home__subtitle
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: pxToRem(18px);
+    margin-bottom: pxToRem(16px);
+  }
+
+  // .smart-home__subdescription
+
+  &__subdescription {
+    margin-bottom: pxToRem(32px);
+  }
+
+  // .smart-home__other-devices
+
+  &__other-devices {
+    margin-top: pxToRem(32px);
+    margin-bottom: pxToRem(200px);
+    padding: pxToRem(45px) pxToRem(110px);
+    background: $smart-home-bg-color;
+    border-radius: pxToRem(40px);
+    display: flex;
+    position: relative;
+    z-index: 100;
+
+    @media (max-width: $break-point-tablet) {
+      margin-top: pxToRem(28px);
+      margin-bottom: pxToRem(150px);
+      padding: pxToRem(40px);
+    }
+  }
+
+  // .smart-home__other-title-block
+
+  &__other-title-block {
+    flex: 0 1 pxToRem(280px);
+  }
+
+  // .smart-home__other-title
+
+  &__other-title {
+    font-weight: 300;
+    font-size: pxToRem(32px);
+    margin-bottom: pxToRem(20px);
+  }
+
+  // .smart-home__btn-border
+
+  &__btn-border {
+  }
+
+  // .smart-home__other-description
+
+  &__other-description {
+    flex: 0 1 pxToRem(250px);
+  }
+
+  // .smart-home__cleaner-img
+
+  &__cleaner-img {
+    position: absolute;
+    bottom: pxToRem(-140px);
+    right: pxToRem(50px);
+
+    @media (max-width: $break-point-tablet) {
+      width: pxToRem(250px);
+      height: pxToRem(250px);
+    }
+  }
+
+  // .smart-home__socket
+
+  &__socket {
+    position: absolute;
+    bottom: pxToRem(20px);
+    right: pxToRem(-80px);
+
+    @media (max-width: $break-point-tablet) {
+      right: pxToRem(-60px);
+      width: pxToRem(140px);
+      height: pxToRem(140px);
+    }
+  }
+}

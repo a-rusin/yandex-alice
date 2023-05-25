@@ -1,0 +1,145 @@
+@import "./../../assets/scss/functions.scss";
+@import "./../../assets/scss/variables.scss";
+
+.alice {
+  height: pxToRem(1394px);
+
+  // .alice__content
+
+  &__content {
+    position: relative;
+  }
+
+  // .alice__header
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .alice__titles
+
+  &__titles {
+  }
+
+  // .alice__logo
+
+  &__logo {
+  }
+
+  // .alice__block
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: $color-font-white;
+    padding-top: pxToRem(400px);
+
+    @media (max-width: $break-point-tablet) {
+      align-items: center;
+    }
+  }
+
+  // .alice__group
+
+  &__group {
+    max-width: pxToRem(450px);
+  }
+
+  // .alice__cmds
+
+  &__cmds {
+    margin-bottom: pxToRem(79px);
+  }
+
+  // .alice__alice-name
+
+  &__alice-name {
+    font-weight: 500;
+    font-size: pxToRem(56px);
+    margin-bottom: pxToRem(40px);
+
+    @media (max-width: $break-point-tablet) {
+      font-size: pxToRem(40px);
+    }
+  }
+
+  // .alice__cmd
+
+  &__cmd {
+    font-size: pxToRem(32px);
+    padding-left: pxToRem(125px);
+
+    @media (max-width: $break-point-tablet) {
+      font-size: pxToRem(26px);
+    }
+
+    // .alice__cmd_opacity
+
+    &_opacity-hight {
+      opacity: 0.7;
+    }
+
+    // .alice__cmd_opacity
+
+    &_opacity-medium {
+      opacity: 0.6;
+    }
+
+    // .alice__cmd_opacity
+
+    &_opacity-low {
+      opacity: 0.4;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: pxToRem(32px);
+    }
+  }
+
+  // .alice__info
+
+  &__info {
+    padding-left: pxToRem(125px);
+  }
+
+  // .alice__title-icon
+
+  &__title-icon {
+    font-size: pxToRem(32px);
+    margin-bottom: pxToRem(24px);
+    margin-left: pxToRem(-60px);
+    background: url("./../../assets/img/whisper-icon.svg") left top no-repeat;
+    padding: 0 0 0 pxToRem(60px);
+  }
+
+  // .alice__text
+
+  &__text {
+    width: pxToRem(240px);
+  }
+
+  // .alice__bg-img
+
+  &__bg-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100px;
+    /* top: 100px; */
+    left: 0;
+    z-index: -1;
+
+    & img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: right;
+    }
+  }
+}
