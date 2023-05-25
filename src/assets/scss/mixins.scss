@@ -3,3 +3,7 @@
 @mixin transition-mixin {
   transition: all $transition-duration ease-out;
 }
+
+@mixin transition-mixin-slider {
+  transition: all $transition-duration-slider ease-out;
+}

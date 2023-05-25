@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 import { slideNavItems } from "../../const/slideNavItems";
-import { fadeRight, zoomIn, fadeUp } from "../../const/transition";
+import { fadeRight, fadeUp } from "../../const/transition";
 
 import "./design.scss";
 
@@ -22,7 +22,7 @@ function Design() {
   }
 
   function getActiveSlide() {
-    return slideNav.filter((item) => item.active)[0].img;
+    return slideNav.filter((item) => item.active)[0].id;
   }
 
   return (
@@ -38,7 +38,24 @@ function Design() {
         </div>
         <div className="container">
           <div className="design__main-block">
-            <motion.img src={getActiveSlide()} custom={1} variants={zoomIn} alt="" className="design__bg-img" />
+            <motion.div
+              custom={1}
+              variants={fadeUp}
+              className="design__slider"
+              style={{ left: `-${getActiveSlide() * 100}%` }}
+            >
+              {slideNavItems.map((item, index) => {
+                return (
+                  <img
+                    key={item.id}
+                    src={item.img}
+                    alt={`Слайд номер ${index + 1}`}
+                    className="design__bg-img"
+                    style={{ left: `${100 * index}%` }}
+                  />
+                );
+              })}
+            </motion.div>
             <div className="design__text">
               <motion.p custom={3} variants={fadeRight} className="design__title-text">
                 Свет
